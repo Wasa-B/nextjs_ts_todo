@@ -1,0 +1,103 @@
+## 초기 셋팅
+
+
+```
+npx create-next-app@latest ./
+```
+
+
+- Default setting
+
+
+## 앱 시작
+
+
+```
+npm run dev
+```
+
+
+## prisma orm 설치
+
+
+```
+npm i prisma --save-dev
+```
+
+
+## prisma mongodb 연결
+
+
+```
+npx prisma init --datasource-provider mongodb
+```
+
+
+## mongodb
+
+- mongodb 접속
+- organizations settings click
+- project menu click
+- new project click
+- project name 작성
+- next click
+- create project click
+
+
+- name: todo
+- create deployment click
+
+
+- username, password copy
+- click "create databaseuser"
+- click "create connection method"
+- click "drivers"
+- copy bash code
+
+mongodb+srv://ghd1876:<db_password>@aicc6todoapp.w2kvxfp.mongodb.net/?retryWrites=true&w=majority&appName=aicc6todoApp
+
+```
+npm install mongodb
+```
+
+
+- click "done"
+- click "Network Access" on left side menu panel
+- click "ADD IP ADDRESS"
+- Access List Entry: 0.0.0.0
+- click "confirm"
+- move to "cluster" on left side menu panel
+- click "connect"
+- click "driver"
+- copy "code sample"
+- replace .env value
+- replace dbpassword to coped password
+- mongodb.net/ + todo
+- delete "&appName=todo"
+
+
+## prisma 생성 코드
+
+
+```
+npx prisma generate
+npx prisma db push
+```
+
+
+## 샘플 데이터 입력
+
+
+- cluster click
+- connect click
+- view full instructions click
+- compass click
+- download compass and Copy the connection string, then open MongoDB Compass
+- compass 실행
+- add collection and paste copy code
+- check todo database
+- ADD DATA click
+
+
+
+
